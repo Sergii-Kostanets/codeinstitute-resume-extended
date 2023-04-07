@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergii</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e110cd4cb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="row no-gutters">
+            <a href="index.html" class="col-md-4 logo"></a>
+            <div class="col-md-8">
+                <div class="row no-gutters bg-color-name-title">
+                    <div class="col heading">
+                        <h1 class="name">Sergii Kostanets</h1>
+                        <h2 class="title">Full Stack Developer</h2>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col">
+                        <ul id="nav" class="list-inline menucontainer">
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-home list-inline-item menuitem">
+                                <a href="index.html" class="hvr-sweep-to-bottom hvr-icon-buzz-out">
+                                    <i class="fa fa-home hvr-icon" aria-hidden="true"></i><span>Home</span>
+                                </a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-resume list-inline-item menuitem">
+                                <a href="resume.html" class="hvr-sweep-to-bottom hvr-icon-buzz-out">
+                                    <i class="fa fa-graduation-cap hvr-icon" aria-hidden="true"></i><span>Resume</span>
+                                </a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-contact list-inline-item menuitem">
+                                <a href="contact.html" class="hvr-sweep-to-bottom hvr-icon-buzz-out">
+                                    <i class="fa fa-comment-o hvr-icon" aria-hidden="true"></i><span>Contact</span>
+                                </a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-interests list-inline-item menuitem">
+                                <a href="interests.html" class="hvr-sweep-to-bottom hvr-icon-buzz-out">
+                                    <i class="fa fa-users hvr-icon" aria-hidden="true"></i><span>Interests</span>
+                                </a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-github list-inline-item menuitem">
+                                <a href="github.html" id="active-page" class="hvr-sweep-to-bottom hvr-icon-buzz-out">
+                                    <i class="fa fa-github hvr-icon" aria-hidden="true"></i><span>GitHub</span>
+                                </a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-download list-inline-item menuitem">
+                                <a href="assets/cv/CV_Sergii_Kostanets.pdf" target="_blank" class="hvr-sweep-to-bottom">
+                                    <i class="fa fa-download" aria-hidden="true"></i><span>Download</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container-fluid">
+        <div class="row bg-color-contact">
+            <div class="col">
+                <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
+                <h5 class="uppercase text-center">You can also search on other user profiles</h5>
+
+                <div class="center-form">
+                    <input type="text" id="gh-username" value="Sergii-Kostanets" oninput="fetchGitHubInformation()" />
+                    <div id="gh-user-data"></div>
+                    <div id="gh-repo-data"></div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div id="footer-details" class="row">
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">
+                    <strong>Experienced in:</strong> HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, Python, MySQL, Git, GitHub, Joomla, Drupal, Docker.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">
+                    Need a printable version of my resume? Download it here.
+                    <a href="assets/cv/Sergii Kostanets - Resume.pdf" target="_blank" class="cv-pdf">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <span class="sr-only">Printable version of resume download link.</span>
+                    </a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Social</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/sergeykostanets/" target="_blank">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook link.</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/sergiikostanets/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn link.</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Sergii-Kostanets" target="_blank">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            <span class="sr-only">GitHub link.</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/sergiikostanets/" target="_blank">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram link.</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="mailto:sergiikostanets@gmail.com" target="_blank">
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                            <span class="sr-only">Email link.</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://wa.me/380977892469?text=Hey%20there,%20Sergii!" target="_blank">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            <span class="sr-only">WhatsApp link.</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>    
+</body>
+<script>
+    window.addEventListener('load', function() {
+        document.querySelector('.logo').classList.add('loaded');
+        document.getElementById('active-page').classList.remove('hvr-sweep-to-bottom');
+    });
+</script>
+</html>

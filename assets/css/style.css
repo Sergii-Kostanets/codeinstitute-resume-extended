@@ -433,6 +433,62 @@ div#map{
     min-height: 360px;
 }
 
+/* GitHub page */
+
+.center-form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+#gh-username{
+    margin: 20px auto;
+    width: 200px;
+}
+
+#gh-user-data>h2{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#loader{
+    display: flex;
+    justify-content: center;
+}
+
+#loader>img{
+    height: 60px;
+    margin: 10px auto;
+}
+
+#gh-user-data{}
+
+.small-name{
+    font-size: 0.5em;
+    font-weight: 600;
+}
+
+.gh-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar>a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.information{
+    text-align: center;
+}
+
 /* Media Queries */
 
 @media(min-width: 992px) {

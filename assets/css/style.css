@@ -427,6 +427,11 @@ button[type="submit"]{
     background-color: #e84610;
 }
 
+.contact-form-response{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 /* Map */
 
 div#map{
@@ -484,11 +489,11 @@ div#map{
     text-align: center;
 }
 
-.avatar>a{
-    /* display: flex;
+/* .avatar>a{
+    display: flex;
     flex-direction: row;
-    justify-content: center; */
-}
+    justify-content: center;
+} */
 
 .avatar>a>img{
     margin-bottom: 20px;
